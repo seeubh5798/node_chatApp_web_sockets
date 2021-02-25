@@ -22,7 +22,6 @@ const autoscroll = ()=>{
 
     const newmessageheight = $newmessage.offsetHeight + newmessagemargin;
     ///visible height///
-
     const visibleheight = $messages.offsetHeight ;
 
     //height of messages container...////////
