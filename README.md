@@ -12,3 +12,4 @@ Implemented features:
 3) Tracking username who are in a particular room.
 4) Implementation of socket.rooms feature to create personal rooms for different groups
 5) Tracking users joining and leaving a room which you are currently in.
+6) Bad words in the message will be automatically filtered
