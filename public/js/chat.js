@@ -14,20 +14,14 @@ const sidebartemplate = document.querySelector('#sidebar-template').innerHTML;
 const {username, room} = Qs.parse(location.search, { ignoreQueryPrefix: true})  //gives query string from url as an object////////////////////////////////
 
 const autoscroll = ()=>{
-    //new msg element///
-
+    /////new msg element/////
     const $newmessage = $messages.lastElementChild;
-
     //height of the last msg///
     const newmessagestyles = getComputedStyle($newmessage);
-    
     const newmessagemargin = parseInt(newmessagestyles.marginBottom);
 
     const newmessageheight = $newmessage.offsetHeight + newmessagemargin;
-
-
     ///visible height///
-
     const visibleheight = $messages.offsetHeight ;
 
     //height of messages container...////////
@@ -42,12 +36,7 @@ const autoscroll = ()=>{
         $messages.scrollTop = containerheight;
     }
 
-
-
-
 }
-
-
 
 socket.on('message', (msg)=>{
     // console.log(msg);
